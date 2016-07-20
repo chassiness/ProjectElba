@@ -30,12 +30,12 @@
             <td>{{ this.name }}</td>
             <td>{{ this.price }}</td>
             <td>{{ this.quantity }}</td>
-            <td>{{ this.totalprice }}</td>
+            <td>${{ this.totalprice }}</td>
         </tr>
     {{/each}}
     <tr style="padding: 10px;" bgcolor="#F4EFEB">
         <td colspan="3" align="right"><strong>Order Total: </strong></td>
-        <td align="center"><strong>{{ totalprice }}</strong></td>
+        <td align="center"><strong>${{ totalprice }}</strong></td>
     </tr>
 </table>
 
