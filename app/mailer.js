@@ -5,10 +5,10 @@ var nodemailer = require('nodemailer'),
 
 // create reusable transporter object using SMTP transport
 var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: process.env.NODEMAILER_SVC,
     auth: {
-        user: 'shop.elbadiaries@gmail.com',
-        pass: 'ordersAtElba'
+        user: process.env.NODEMAILER_USER,
+        pass: process.env.NODEMAILER_PW
     }
 });
 
