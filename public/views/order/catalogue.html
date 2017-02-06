@@ -27,8 +27,8 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="product in cakes">
-        <div class="col-md-4 col-xs-4" ng-repeat="cake in product" ng-init="chosenFlavor = cake.flavors[0]">
-            <img ng-src="{{ cake.imageUrl }}" class="img-responsive">
+        <div class="product-box col-md-4 col-xs-12" ng-repeat="cake in product" ng-init="chosenFlavor = cake.flavors[0]">
+            <img ng-src="{{ cake.imageUrl }}" class="img-responsive center-block">
             <h4>{{ cake.name }}</h4>
 
             <p>{{ cake.description }} <strong> ${{ cake.price }} </strong></p>
@@ -88,8 +88,8 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="cupcakeRow in cupcakes">
-        <div class="col-md-4 col-xs-4" ng-repeat="cupcake in cupcakeRow">
-            <img ng-src="{{ cupcake.imageUrl }}" class="img-responsive">
+        <div class="product-box col-md-4 col-xs-12" ng-repeat="cupcake in cupcakeRow">
+            <img ng-src="{{ cupcake.imageUrl }}" class="img-responsive center-block">
             <h4>{{ cupcake.name }}</h4>
 
             <p>{{ cupcake.description }} <strong>${{ cupcake.price }}</strong></p>
@@ -149,8 +149,8 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="macaronRow in macarons">
-        <div class="col-md-4 col-xs-4" ng-repeat="macaron in macaronRow">
-            <img ng-src="{{ macaron.imageUrl }}" class="img-responsive">
+        <div class="product-box col-md-4 col-xs-12" ng-repeat="macaron in macaronRow">
+            <img ng-src="{{ macaron.imageUrl }}" class="img-responsive center-block">
             <h4>{{ macaron.name }}</h4>
 
             <p>{{ macaron.description }} <strong>${{ macaron.price }}</strong></p>
@@ -197,8 +197,8 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="treatRow in treats">
-        <div class="col-md-4 col-xs-4" ng-repeat="treat in treatRow">
-            <img ng-src="{{ treat.imageUrl }}" class="img-responsive">
+        <div class="product-box col-md-4 col-xs-12" ng-repeat="treat in treatRow">
+            <img ng-src="{{ treat.imageUrl }}" class="img-responsive center-block">
             <h4>{{ treat.name }}</h4>
 
             <p>{{ treat.description }} <strong>${{ treat.price }}</strong></p>

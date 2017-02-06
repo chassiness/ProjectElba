@@ -29,6 +29,12 @@ h1 {
     margin-top: 10px;
 }
 
+#main-container, #footer-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+}
+
 .btn-splash {
     background-color: rgba(255,255,255,0.8);
     border-radius: 0;
@@ -98,8 +104,8 @@ h1 {
 }
 
 .custom-nav {
-    width: 800px;
-    height: 50px;
+    width: 80%;
+    /*height: 50px;*/
 }
 
 a.nav-tab {
@@ -121,7 +127,12 @@ a:hover, a:visited, a, a.nav-tab:-webkit-any-link {
 }
 
 .product-grid {
-    padding: 60px 0 0 0;
+    /*padding: 60px 0 0 0;*/
+    margin: 5% 0 0 0;
+}
+
+.product-box {
+    margin-bottom: 5%;
 }
 
 footer {
@@ -133,7 +144,7 @@ footer {
     position: absolute;
     bottom: 0;
     display: block;
-    height: 395px;
+    height: auto;
 }
 
 footer .foot-block {
@@ -279,9 +290,9 @@ body {
 }
 
 .img-caption-overlay-sm {
-    top:0;
+    /*top:0;
     left:0;
-    position: absolute;
+    position: absolute;*/
     text-align: center;
     padding: 40px;
     font-size: 48px;
@@ -289,6 +300,8 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
+    margin-bottom: 5%;
+    background-image: url(http://res.cloudinary.com/chassiness/image/upload/b_rgb:000,c_crop,h_150,o_60,w_1100/v1428704039/P1180557_itm8od.jpg);
 }
 
 .img-container{

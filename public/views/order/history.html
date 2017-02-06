@@ -1,12 +1,15 @@
 <div ng-show="userLoggedIn()" class="marketing">
 
-    <div class="img-container">
+    <!--<div class="img-container">
         <img class="img-responsive"
              src="http://res.cloudinary.com/chassiness/image/upload/b_rgb:000,c_crop,h_150,o_60,w_1100/v1428704039/P1180557_itm8od.jpg">
 
         <div ng-if="!userAdmin()" class="img-caption-overlay-sm text-uppercase">Your order history</div>
         <div ng-if="userAdmin()" class="img-caption-overlay-sm text-uppercase">Orders</div>
-    </div>
+    </div>-->
+
+    <div ng-if="!userAdmin()" class="img-caption-overlay-sm text-uppercase">Your order history</div>
+    <div ng-if="userAdmin()" class="img-caption-overlay-sm text-uppercase">Orders</div>
 
     <!-- ORDER DETAILS -->
     <div ng-if="!userAdmin()" ng-include="'views/order/orderlist.html'"></div>
