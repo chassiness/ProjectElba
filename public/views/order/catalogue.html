@@ -5,7 +5,7 @@
     <!--CAKES-->
 
     <div ng-cloak id="cakesCtlg" class="row featurette">
-        <div class="col-md-7 col-xs-6">
+        <div class="col-md-7 col-xs-12 text-center-sm">
             <!-- <a href="" ng-click="getCakes()"></a> -->
             <h2 class="featurette-heading">Cakes<span class="text-muted"></span></h2>
 
@@ -15,11 +15,11 @@
             <p class="lead">They say that a party without a cake is just a meeting. The reverse is true too! So make
                 your next meeting a party by getting a cake or two (or three).</p>
 
-            <a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
-                <h1><i class="fa fa-shopping-cart"></i> Proceed</h1>
-            </a>
+            <!--<a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
+                <h1><i class="fa fa-shopping-cart"></i> Checkout</h1>
+            </a>-->
         </div>
-        <div class="col-md-5 col-xs-6">
+        <div class="col-md-5 hidden-xs hidden-sm">
             <img class="featurette-image img-responsive center-block" alt="Cakes"
                  src="http://res.cloudinary.com/chassiness/image/upload/c_crop,h_700,w_700/v1428656572/P1180860_kfxnvs.jpg"
                  data-holder-rendered="true">
@@ -27,7 +27,7 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="product in cakes">
-        <div class="product-box col-md-4 col-xs-12" ng-repeat="cake in product" ng-init="chosenFlavor = cake.flavors[0]">
+        <div class="product-box col-md-4 col-sm-4 col-xs-12" ng-repeat="cake in product" ng-init="chosenFlavor = cake.flavors[0]">
             <img ng-src="{{ cake.imageUrl }}" class="img-responsive center-block">
             <h4>{{ cake.name }}</h4>
 
@@ -68,7 +68,7 @@
     <!--CUPCAKES-->
 
     <div ng-cloak id="cupcakesCtlg" class="row featurette">
-        <div class="col-md-7 col-md-push-5 col-xs-6">
+        <div class="col-md-7 col-md-push-5 col-xs-12 text-center-sm">
             <h2 class="featurette-heading">Cupcakes <span class="text-muted"></span></h2>
 
             <!--<p class="lead">Come on, who doesn't like a cupcake?</p>-->
@@ -76,11 +76,11 @@
             <p class="lead">What could be better than cupcakes? Boozy cupcakes, of course! Get your cupcake and alcohol
                 fix in one shot! You can have red wine, tequila, or Baileys. Who knows, whiskey may be coming too.</p>
 
-            <a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
-                <h1><i class="fa fa-shopping-cart"></i> Proceed</h1>
-            </a>
+            <!--<a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
+                <h1><i class="fa fa-shopping-cart"></i> Checkout</h1>
+            </a>-->
         </div>
-        <div class="col-md-5 col-md-pull-7 col-xs-6">
+        <div class="col-md-5 col-md-pull-7 hidden-xs hidden-sm">
             <img class="featurette-image img-responsive center-block" alt="Cupcakes"
                  src="http://res.cloudinary.com/chassiness/image/upload/c_crop,h_700,w_700/v1428656144/P1130676_i0txl4.png"
                  data-holder-rendered="true">
@@ -88,7 +88,7 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="cupcakeRow in cupcakes">
-        <div class="product-box col-md-4 col-xs-12" ng-repeat="cupcake in cupcakeRow">
+        <div class="product-box col-md-4 col-sm-4 col-xs-12" ng-repeat="cupcake in cupcakeRow">
             <img ng-src="{{ cupcake.imageUrl }}" class="img-responsive center-block">
             <h4>{{ cupcake.name }}</h4>
 
@@ -128,7 +128,7 @@
     <!--MACARONS-->
 
     <div ng-cloak id="macaronsCtlg" class="row featurette">
-        <div class="col-md-7 col-xs-6">
+        <div class="col-md-7 col-xs-12 text-center-sm">
             <h2 class="featurette-heading">Macarons<span
                     class="text-muted"></span></h2>
 
@@ -137,11 +137,11 @@
             <p class="lead">We can combine different flavors in one box if you order 5 boxes or more. The more the
                 merrier, so to speak.</p>
 
-            <a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
-                <h1><i class="fa fa-shopping-cart"></i> Proceed</h1>
-            </a>
+            <!--<a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
+                <h1><i class="fa fa-shopping-cart"></i> Checkout</h1>
+            </a>-->
         </div>
-        <div class="col-md-5 col-xs-6">
+        <div class="col-md-5 hidden-xs hidden-sm">
             <img class="featurette-image img-responsive center-block" alt="Macarons"
                  src="http://res.cloudinary.com/chassiness/image/upload/c_crop,h_600,w_600/v1428656366/P1120538_rabrwl.jpg"
                  data-holder-rendered="true">
@@ -149,7 +149,7 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="macaronRow in macarons">
-        <div class="product-box col-md-4 col-xs-12" ng-repeat="macaron in macaronRow">
+        <div class="product-box col-md-4 col-sm-4 col-xs-12" ng-repeat="macaron in macaronRow">
             <img ng-src="{{ macaron.imageUrl }}" class="img-responsive center-block">
             <h4>{{ macaron.name }}</h4>
 
@@ -177,19 +177,19 @@
     <!--OTHER TREATS-->
 
     <div ng-cloak id="treatsCtlg" class="row featurette">
-        <div class="col-md-7 col-md-push-5 col-xs-6">
+        <div class="col-md-7 col-md-push-5 col-xs-12 text-center-sm">
             <h2 class="featurette-heading">Other Treats
                 <span class="text-muted"></span></h2>
 
             <p class="lead">Brownies, cookies, paleo cookies, laces cookies, etc. Check out what we have in rotation
                 this season.</p>
 
-            <a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
-                <h1><i class="fa fa-shopping-cart"></i> Proceed</h1>
-            </a>
+            <!--<a ng-href="/cart" href="#" class="btn btn-lg btn-cart" role="button">
+                <h1><i class="fa fa-shopping-cart"></i> Checkout</h1>
+            </a>-->
 
         </div>
-        <div class="col-md-5 col-md-pull-7 col-xs-6">
+        <div class="col-md-5 col-md-pull-7 hidden-xs hidden-sm">
             <img class="featurette-image img-responsive center-block" alt="Other Treats"
                  src="http://res.cloudinary.com/chassiness/image/upload/c_crop,h_700,w_700/v1428711643/P1160632_mqpajp.png"
                  data-holder-rendered="true">
@@ -197,7 +197,7 @@
     </div>
 
     <div class="row product-grid text-center" ng-repeat="treatRow in treats">
-        <div class="product-box col-md-4 col-xs-12" ng-repeat="treat in treatRow">
+        <div class="product-box col-md-4 col-sm-4 col-xs-12" ng-repeat="treat in treatRow">
             <img ng-src="{{ treat.imageUrl }}" class="img-responsive center-block">
             <h4>{{ treat.name }}</h4>
 
@@ -225,7 +225,7 @@
     <!--CUSTOM ORDERS-->
 
     <div ng-cloak id="customCtlg" class="row featurette">
-        <div class="col-md-7 col-xs-6">
+        <div class="col-md-7 col-xs-12 text-center-sm">
             <h2 class="featurette-heading">Custom Orders <span class="text-muted"></span></h2>
 
             <p class="lead">Is there an event that requires special attention? Let us know and we'll be happy to
@@ -234,11 +234,13 @@
                 <h1>Inquire Now</h1>
             </a>
         </div>
-        <div class="col-md-5 col-xs-6">
+        <div class="col-md-5 col-xs-12 hidden-xs hidden-sm">
             <img class="featurette-image img-responsive center-block" alt="Other Treats"
                  src="http://res.cloudinary.com/chassiness/image/upload/c_crop,g_center,h_500,w_500,x_170,y_500/v1428656465/P1150974_mqarkf.png"
                  data-holder-rendered="true">
         </div>
     </div>
+
+    <hr class="featurette-divider">
 
 </div>

@@ -140,9 +140,11 @@ footer {
     margin-top: 50px;
     color: rgba(255,255,255,0.8);
     background-image: url("http://res.cloudinary.com/chassiness/image/upload/b_rgb:000,c_crop,g_center,h_500,o_40,w_1600/v1428704039/P1180557_itm8od.jpg");
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     position: absolute;
-    bottom: 0;
+    /*bottom: 0;*/
+    top: 100%;
+    margin-top: -395px;
     display: block;
     height: auto;
 }
@@ -263,8 +265,9 @@ a.bg-button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
+    width: 100%;
     height: 500px;
+    overflow: hidden;
 }
 
 .carousel-caption h1 {
@@ -325,6 +328,21 @@ body {
     margin-left: 10px;
 }
 
+/* NAVIGATION
+-------------------------*/
+
+/* override default grey bg and border */
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Featurettes
 ------------------------- */
@@ -348,6 +366,7 @@ body {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
+/* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     /* Navbar positioning foo */
     .navbar-wrapper {
@@ -379,6 +398,37 @@ body {
     }
 }
 
+/* Small devices (tablets, 992px and below) */
+@media (max-width: 992px) {
+    .text-center-sm {
+        text-align: center;
+    }
+    .custom-nav {
+        width: 100%;
+    }
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
+    .carousel-inner > .item > img {
+        width: initial;
+        max-width: initial;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .row>div:last-child {
+        padding-left: 0;
+    }
+    footer .row>div:first-child {
+        padding-right: 0;
+    }
+
+    #footer-container {
+        text-align: center;
+    }
+}
+
+/* Medium devices */
 @media (min-width: 992px) {
     .featurette-heading {
         margin-top: 120px;
