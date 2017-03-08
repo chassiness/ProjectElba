@@ -406,9 +406,6 @@ body {
     .custom-nav {
         width: 100%;
     }
-    .carousel-caption h1 {
-        font-size: 50px;
-    }
     .carousel-inner > .item > img {
         width: initial;
         max-width: initial;
@@ -426,12 +423,41 @@ body {
     #footer-container {
         text-align: center;
     }
+
+    #main-container, #footer-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: auto;
+    }
+
+    .carousel .item, .carousel {
+        height: 300px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption {
+        bottom: 50px;
+    }
+
+    .ordersearch .heading {
+        font-size: 30px;
+    }
+
+    .img-caption-overlay-sm {
+        font-size: large;
+    }
 }
 
 /* Medium devices */
 @media (min-width: 992px) {
     .featurette-heading {
         margin-top: 120px;
+    }
+    .carousel-caption h1 {
+        font-size: 50px;
     }
 }
 
